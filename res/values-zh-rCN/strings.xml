@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_vkey_X">Button-X</string>
+    <string name="menu_vkey_Y">Button-Y</string>
+    <string name="menu_vkey_A">Button-A</string>
+    <string name="menu_vkey_B">Button-B</string>
+    <string name="menu_vkey_MENU">MENU</string>
+    <string name="menu_vkey_SELECT">选择</string>
+    <string name="menu_vkeys">Virtual Keys</string>
+    <string name="menu_options">Options</string>
+    <string name="menu_quit_game">退出游戏</string>
+    <string name="menu_quit">退出</string>
+    <string name="mame_name">MAME4droid</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="join_peer_game">Join Peer Game</string>
+    <string name="start_game">开启游戏</string>
+    <string name="netplay">Netplay</string>
+    <string name="connection">Peer-to-peer Netplay</string>
+    <string name="wifiTIP">TIP: To get optimal network performance or to play without an access point, enable a Wi-Fi direct connection between peer devices.</string>
+    <string name="don_t_bother">不再问我</string>
+    <string name="app_name">街机游戏</string>
+</resources>
