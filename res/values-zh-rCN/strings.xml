@@ -19,4 +19,5 @@
     <string name="wifiTIP">TIP: To get optimal network performance or to play without an access point, enable a Wi-Fi direct connection between peer devices.</string>
     <string name="don_t_bother">不再问我</string>
     <string name="app_name">街机游戏</string>
+    <string name="game_desc">《恐龙快打》是由日本CAPCOM公司出品的一款街机游戏。游戏改编自1993年美国CBS放送的《Xenozoic Tales》 ，靠经典商业题材--“恐龙”来卖座。舞台设定在恐龙和人类共存的26世纪。在此作品中，道具的作用得到了很大的强化，所有的枪械道具都有弹药的概念，弹药用完就只能作为一次性的投掷道具了，甚至可以抢到Boss的武器来反制。像木桶一类的容器道具不再是仅仅为得到其中的物品被砸破了，它们可以被抬起投掷出去。 除此之外，《恐龙快打》也继承了Capcom惯例的多种攻击方式。游戏也中有很多值得玩味的Bug，是一部不失水准的热斗之作。</string>
 </resources>

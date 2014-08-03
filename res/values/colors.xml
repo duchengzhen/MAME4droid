@@ -23,5 +23,11 @@
  <color name="blue">#0000FF</color>
  <color name="navy">#000080</color>
  <color name="black">#000000</color>
-  
+    <color name="common_black">#FF333333</color>
+    <color name="common_light_gray">#FFACACAC</color>
+    <color name="light_orange">#FFffa726</color>
+    <color name="deep_orange">#FFfb8c00</color>
+    <color name="common_text_gray">#FF777777</color>
+    <color name="common_bg">#FFF4F4F4</color>
+
 </resources>

@@ -2,15 +2,23 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
+              android:background="@color/common_bg"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
     <GridView
-        android:id="@+id/gv_main"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+            android:visibility="gone"
+            android:id="@+id/gv_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
 
-        />
-
+    <ListView
+            android:id="@+id/lv_main"
+            android:scrollbars="none"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 
 </LinearLayout>
