@@ -8,83 +8,119 @@
     <LinearLayout
             android:background="@color/white"
             android:layout_width="match_parent"
-            android:layout_height="190dp"
-            android:orientation="horizontal">
-
-        <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent">
-
-            <com.yuntixing.app.view.RoundAngleImageView
-                    android:scaleType="centerCrop"
-                    android:layout_margin="10dp"
-                    android:layout_width="@dimen/cover_dimen"
-                    android:layout_height="@dimen/cover_dimen"
-                    android:src="@drawable/cover_demo"
-                    calvin:roundHeight="5dp"
-                    calvin:roundWidth="5dp"
-                    />
-
-        </FrameLayout>
+            android:layout_height="160dp"
+            android:orientation="vertical">
 
         <LinearLayout
-                android:padding="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
             <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="20sp"
-                        android:textColor="@color/common_black"
-                        android:text="恐龙快打"/>
-                <Button
-                        android:background="@drawable/selector_btn_bg"
-                        android:layout_gravity="right"
-                        android:layout_width="60dp"
-                        android:layout_height="30dp"
-                        android:text="安装"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                <com.calvin.games.view.RoundAngleImageView
+                        android:id="@+id/raiv_cover"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="10dp"
+                        android:layout_width="@dimen/cover_dimen"
+                        android:layout_height="@dimen/cover_dimen"
+                        android:src="@drawable/cover_demo"
+                        calvin:roundHeight="5dp"
+                        calvin:roundWidth="5dp"/>
 
             </FrameLayout>
-            <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                <ImageView
-                        android:layout_width="15dp"
-                        android:layout_height="15dp"
-                        android:src="@drawable/good"/>
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/common_light_gray"
-                        android:text="109万人安装"/>
-                <TextView
-                        android:layout_marginLeft="5dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/common_light_gray"
-                        android:text="23.1MB"/>
-            </LinearLayout>
 
             <LinearLayout
-                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                <TextView
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textColor="@color/common_black"
+                            android:text="@string/name_demo"/>
+                    <Button
+                            android:id="@+id/btn_install"
+                            android:background="@drawable/selector_btn_bg"
+                            android:layout_gravity="right"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:textSize="14sp"
+                            android:text="@string/install"/>
+                    <Button
+                            android:visibility="gone"
+                            android:id="@+id/btn_downloading"
+                            android:background="@drawable/selector_btn_bg"
+                            android:layout_gravity="right"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:textSize="14sp"
+                            android:text="@string/downloading"/>
+
+                </FrameLayout>
+                <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="13sp"
-                        android:textColor="@color/common_text_gray"
-                        android:text="@string/game_desc"/>
+                        android:orientation="horizontal">
+                    <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/good"/>
+                    <TextView
+                            android:id="@+id/tv_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/common_light_gray"
+                            android:text="@string/count_demo"/>
+                    <TextView
+                            android:id="@+id/tv_size"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/common_light_gray"
+                            android:text="@string/size_demo"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:id="@+id/tv_desc"
+                            android:lines="5"
+                            android:ellipsize="end"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textColor="@color/common_text_gray"
+                            android:text="@string/game_desc"/>
+
+                </LinearLayout>
+
 
             </LinearLayout>
+
+        </LinearLayout>
+        
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <com.calvin.games.view.NumberProgressBar
+                    android:id="@+id/npb_download"
+                    style="@style/NumberProgressBar_Funny_Orange"
+                    />
 
 
         </LinearLayout>
+
+
 
 
 

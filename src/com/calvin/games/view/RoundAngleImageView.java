@@ -1,4 +1,4 @@
-package com.yuntixing.app.view;
+package com.calvin.games.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;

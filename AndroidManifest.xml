@@ -76,6 +76,9 @@
         <meta-data
             android:name="xperiaplayoptimized_content"
             android:resource="@drawable/icon" />
+        <!--崩溃分析-->
+        <meta-data android:name="com.crashlytics.ApiKey"
+                   android:value="b399238f366a40069b68f3413318e813"/>
     </application>
 
 </manifest>

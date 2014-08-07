@@ -19,6 +19,21 @@ public class GameBean {
     private String size;
     /**游戏被下载数量*/
     private String count;
+    /**下载链接地址*/
+    private String url;
+
+    public GameBean(){}
+
+    public GameBean(String name, String cover, String description, String type, String[] shots, String size, String count, String url) {
+        this.name = name;
+        this.cover = cover;
+        this.description = description;
+        this.type = type;
+        this.shots = shots;
+        this.size = size;
+        this.count = count;
+        this.url = url;
+    }
 
     public String getName() {
         return name;
@@ -74,5 +89,13 @@ public class GameBean {
 
     public void setCount(String count) {
         this.count = count;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }

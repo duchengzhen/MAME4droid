@@ -29,5 +29,7 @@
     <color name="deep_orange">#FFfb8c00</color>
     <color name="common_text_gray">#FF777777</color>
     <color name="common_bg">#FFF4F4F4</color>
+    <color name="transparent">#00000000</color>
+    <color name="common_press">#FFEEEEEE</color>
 
 </resources>

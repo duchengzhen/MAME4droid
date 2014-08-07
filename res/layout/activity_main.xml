@@ -16,8 +16,10 @@
     <ListView
             android:id="@+id/lv_main"
             android:scrollbars="none"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:dividerHeight="10dp"
+            android:divider="@color/transparent"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
