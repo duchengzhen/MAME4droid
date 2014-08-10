@@ -1,7 +1,9 @@
 package com.calvin.games.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ListView;
 import com.calvin.games.R;
 import com.calvin.games.adapter.MainAdapter;
@@ -10,6 +12,7 @@ import com.calvin.games.common.Downloader;
 import com.calvin.games.view.NumberProgressBar;
 
 import com.crashlytics.android.Crashlytics;
+import com.seleuco.mame4droid.MAME4droid;
 
 import java.util.*;
 
@@ -23,10 +26,7 @@ public class MainActivity extends Activity{
     private List<GameBean> games;
 
     private ListView lvMain;    //主listview
-    //下载地址
-    public static final String URL="http://";
-    //下载路径
-    public static final String PATH="";
+
     //存放下载器
     private Map<String,Downloader> downloaders=new HashMap<>();
     //存放与下载器对应的进度条
@@ -50,7 +50,7 @@ public class MainActivity extends Activity{
             game.setDescription(getString(R.string.game_desc));
             game.setSize(getString(R.string.size_demo));
             //game.setUrl("http://gdown.baidu.com/data/wisegame/d4cdacae4dbc737c/buyudaren3_100.apk");
-            game.setUrl("http://www.appchina.com/market/d/2136048/cop.baidu_0/com.roamingsoft.manager.apk");
+            game.setUrl("http://172.30.66.19/1Q2W3E4R5T6Y7U8I9O0P1Z2X3C4V5B/fd1.yingyonghui.com/d762e34ee5f933f3cecc58bcd1083dff/53e3b0df/apk/2136048/com.roamingsoft.manager.1405848887678.apk");
             games.add(game);
         }
         adapter=new MainAdapter(this,games);
@@ -60,6 +60,9 @@ public class MainActivity extends Activity{
 
     }
 
+    public void start(View view){
+        startActivity(new Intent(this, MAME4droid.class));
+    }
 }
 
 

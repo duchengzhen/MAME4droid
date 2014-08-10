@@ -6,5 +6,6 @@
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry kind="src" path="gen"/>
 	<classpathentry kind="lib" path="libs/crashlytics.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/androidannotations-api-3.0.1"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 import com.calvin.games.R;
 import com.calvin.games.bean.GameBean;
 import com.calvin.games.bean.LoadInfoBean;
@@ -108,6 +109,34 @@ public class MainAdapter extends BaseAdapter {
         return convertView;
     }
 
+    private class MnDownload extends AsyncTask<String,Integer,String>{
+        @Override
+        protected String doInBackground(String... params) {
+            hold.npbDownload.setMax(100);
+            int i=0;
+            while(i<=100){
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                i++;
+                publishProgress(i);
+            }
+            return params[0];
+        }
+
+        @Override
+        protected void onProgressUpdate(Integer... values) {
+            hold.npbDownload.setProgress(values[0]);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            Toast.makeText(mContext,s,Toast.LENGTH_SHORT).show();
+        }
+    }
+
     private class DlListener implements View.OnClickListener{
         //int postion;
         String url;
@@ -120,12 +149,13 @@ public class MainAdapter extends BaseAdapter {
         public void onClick(View v) {
             //String url=games.get(postion).getUrl();
             //线程数
-            String threadCount="3";
+            /*String threadCount="3";
             //下载到路径
             String localFile= Environment.getExternalStorageDirectory()+ File.separator+"dl.apk";
             DownloadTask downloadTask = new DownloadTask(v,url);
-            downloadTask.execute(localFile,threadCount);
-
+            downloadTask.execute(localFile,threadCount);*/
+            MnDownload task = new MnDownload();
+            task.execute("下载完毕");
 
         }
     }

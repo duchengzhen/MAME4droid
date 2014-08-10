@@ -5,4 +5,7 @@
 	<lib name="crashlytics.jar" scope="COMPILE">
 		<relative-module-cls project-related="jar://$PROJECT_DIR$/libs/crashlytics.jar!/"/>
 	</lib>
+	<levels>
+		<level name="androidannotations-api-3.0.1" value="project"/>
+	</levels>
 </component>
